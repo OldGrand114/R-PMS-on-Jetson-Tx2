@@ -1,5 +1,5 @@
 # 1. darknet-cpp from
-  https://github.com/prabindh/darknet
+  darknet-cpp 버전 출처 : https://github.com/prabindh/darknet
 
 <br>
 
