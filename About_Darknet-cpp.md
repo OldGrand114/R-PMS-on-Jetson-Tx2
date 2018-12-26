@@ -38,6 +38,7 @@
 ## 1. image -> structure
 yolov3에서는 코드 작성자가 본인이 image 저장용 structure를 만들어서 사용. channel은 rgb이고 normalized되어 있어서, 이를 opencv에 쓸 Mat로 변환함.
 <br> 
+<br>
 
 ## 2. cvui 사용
 출처 : https://github.com/Dovyski/cvui<br>
