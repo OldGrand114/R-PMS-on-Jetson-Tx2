@@ -17,14 +17,14 @@ YOLOv3-tiny를 기반으로 9차례에 걸쳐 네트워크를 수정하였으며
 이에 따라 오토바이 탑승자, 자전거 탑승자의 경우 오토바이 부분, 자전거 부분을 사람과 구분하여 GT(Ground-Truth)로 설정할 경우 영상에서 매우 작게 나타나 제대로 된 학습이 불가능함.
 따라서 자전거, 보행자 class를 탑승자와 함께 묶어 GT를 설정하였으나 Network capacity의 한계로 class간 오검출 현상이 발생함.
 추후 학습 시 자전거 class 오토바이 class 삭제 및 자전거 탑승자는 person class로 셜정, 오토바이 class는 negative image로 설정할 것을 추천.
-
+<br><br>
 # 구현 목표
 1. 처리속도 : 입력 영상 크기와 동일한 크기의 출력 영상에 대해 약 10 fps 
 2. Person, Car, Bicycle, Motorcycle, Truck의 5가지 class에 대해 검출 시도
 3. mAP 90% 이상
-4. Person missing rate 5% 이하
+4. Person missing rate 5% 이하<br><br>
 
-cf) 자전거 class를 제외하고 평가시 목표 달성. 포함 시 오검출 현상으로 정성적 평가는 매우 떨어짐.ㅠㅠ
+cf) 자전거 class를 제외하고 평가시 목표 달성. 포함 시 오검출 현상으로 정성적 평가는 매우 떨어짐.ㅠㅠ<br><br>
 
 # 개발 환경
 0. Jetson Tx2 보드 1대, 학습용 PC 1대, 노트북 1대
@@ -32,17 +32,17 @@ cf) 자전거 class를 제외하고 평가시 목표 달성. 포함 시 오검�
  - Ubuntu 16.04
  - CUDA 9.0
  - CUDNN 7.1.4
- - OpenCV 3.3.1
+ - OpenCV 3.3.1<br>
  
 2. 학습용 PC
- - NVIDIA Geforce GTX 1070 TI
+ - NVIDIA Geforce GTX 1070 TI<br>
  
 3. 실험용 노트북 PC
- - NVIDIA Geforce GTX 1060
+ - NVIDIA Geforce GTX 1060<br><br>
 
 # YOLOv3
-Joseph Redmon과 Ali Farhadi를 찬양하십시오. 갓갓
-YOLO 및 Darknet은 YOLO를 구글에서 검색하시고 홈페이지 들어가서 다운받으세요. 링크는 서비스
+Joseph Redmon과 Ali Farhadi를 찬양하십시오. 갓갓<br>
+YOLO 및 Darknet은 YOLO를 구글에서 검색하시고 홈페이지 들어가서 다운받으세요. 링크는 서비스<br><br>
 
 https://pjreddie.com/darknet/yolo/
 
@@ -50,20 +50,20 @@ https://github.com/pjreddie/darknet
 
 https://github.com/AlexeyAB/darknet
 
-YOLO는 C로 작성된 Darknet Framework로 구현되어 있으며 자세한 설명은 위의 홈페이지를 참고하시면 Tutorial은 끝.
-천천히 따라 해보시는게 최소삽질로 최대이득을 볼 수 있습니다.
+YOLO는 C로 작성된 Darknet Framework로 구현되어 있으며 자세한 설명은 위의 홈페이지를 참고하시면 Tutorial은 끝.<br>
+천천히 따라 해보시는게 최소삽질로 최대이득을 볼 수 있습니다.<br><br>
 
 # Training dataset
 
-이것 저것 많이 가져다 씀
-MIO-TCD-Localization, SPID, PETA, 116kBoxcars, DukeMTMC, MOT Challenge, VIRAT 등등
-Dataset 만드신 분들 존경존경 충성충성.
-검색하면 금방 나오니까 링크나 인용은 생략.
-이 외에 자체 제작한 set이 있으나 privacy 문제로 공유X. 발표 이후 삭제 함.
+이것 저것 많이 가져다 씀<br>
+MIO-TCD-Localization, SPID, PETA, 116kBoxcars, DukeMTMC, MOT Challenge, VIRAT 등등<br>
+Dataset 만드신 분들 존경존경 충성충성.<br>
+검색하면 금방 나오니까 링크나 인용은 생략.<br>
+이 외에 자체 제작한 set이 있으나 privacy 문제로 공유X. 발표 이후 삭제 함.<br>
 
-총 157,756장 사용. 약 20000장 정도는 직접 annotation 함. ㅠㅠ
+총 157,756장 사용. 약 20000장 정도는 직접 annotation 함. ㅠㅠ<br>
 
-annotation tool은 두개 써봤는데 링크는 아래에... 각 장단점이 있긴한데 편한걸로 골라쓰시면 됨.
+annotation tool은 두개 써봤는데 링크는 아래에... 각 장단점이 있긴한데 편한걸로 골라쓰시면 됨.<br>
 
 https://github.com/AlexeyAB/Yolo_mark
 
