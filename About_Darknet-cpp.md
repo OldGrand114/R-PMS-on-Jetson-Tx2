@@ -3,6 +3,7 @@
 
 # 2. How to use commands of YOLOv3
     1. train
+    
       1) 처음부터
       2) backup file 부터
       ./darknet detector train (.data파일 위치) (.cfg파일 위치) (.backup파일 위치)
