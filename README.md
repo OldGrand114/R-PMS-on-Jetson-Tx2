@@ -57,6 +57,7 @@ YOLO는 C로 작성된 Darknet Framework로 구현되어 있으며 자세한 설
 1. mmi9 폴더를 darknet 하위로 이동
  
   yolov3-tiny-mmi9.cfg
+
      1) cfg 파일에서 본인이 원하는 네트워크 구성 가능.
      2) class 개수를 C라고 할 때
   
@@ -76,6 +77,7 @@ YOLO는 C로 작성된 Darknet Framework로 구현되어 있으며 자세한 설
      6) backup에는 weight 파일 및 backup 파일 directory 설정.
   
   MyObj.names
+     
      1) Class 이름 적어 놓은 파일
         
         
