@@ -8,7 +8,7 @@ os.chdir('/home/tkol/mAP/ground-truth')
 if not os.path.exists('/home/tkol/mAP/ground-truth/backup2'): # if it doesn't exist already
   os.makedirs('/home/tkol/mAP/ground-truth/backup2')
 
-os.system('mv *.txt backup2')
+os.system('mv *.txt backup2') # backup2 폴더로 txt파일 전부 옮기기
 
 os.chdir('backup2')
 
