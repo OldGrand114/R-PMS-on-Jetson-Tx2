@@ -1,5 +1,7 @@
 import os
 
+# 본인이 사용할 디렉토리로 전부 바꿔라
+
 os.chdir('/home/tkol/darknet/results')
 os.system('cp *.txt ../../mAP/valid_result')
 print('valid_result redirec complete\n')
