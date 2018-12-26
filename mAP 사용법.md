@@ -1,7 +1,7 @@
 **3개 py파일중 실질적 역할을 하는건 하나뿐**<br>
   1. gt, pred는 각각 truck의 groundtruth, prediction을 car로 바꾸는 파일일 뿐이다.
   2. 실절적 역할은 evaluation.py 하나뿐
-
+<br>
 
 **우선 yolov3에서 validation을 거쳐 result에 valid한거 저장되있다 가정.**
 
