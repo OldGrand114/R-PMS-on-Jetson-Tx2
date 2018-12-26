@@ -52,10 +52,9 @@ https://github.com/AlexeyAB/darknet
 YOLO는 C로 작성된 Darknet Framework로 구현되어 있으며 자세한 설명은 위의 홈페이지를 참고하시면 Tutorial은 끝.
 천천히 따라 해보시는게 최소삽질로 최대이득을 볼 수 있습니다.
 
-# 내맘대로 YOLO 설명(일단은 돌려보기)
-0. YOLO 홈페이지에서 Darknet 설치 및 tutorial 해봤다는 가정하에 진행.
-1. mmi9 폴더를 darknet 하위로 이동
- 
+# 내맘대로 YOLO 만져보기 
+1. 학습 네트워크 설정 및 디렉토리 설정.
+
   yolov3-tiny-mmi9.cfg
 
      1) cfg 파일에서 본인이 원하는 네트워크 구성 가능.
@@ -80,6 +79,28 @@ YOLO는 C로 작성된 Darknet Framework로 구현되어 있으며 자세한 설
      
      1) Class 이름 적어 놓은 파일
         
-        
+2. YOLO Training weight 파일 생성 주기 변경
+  
+  darknet/examples/detector.c
+  
+     1) void train_detector() 부분으로 가서
+     2) save_weights 검색
+     3) 바로 아랫 줄에 
+        if(i%10000==0 || (i < 1000 && i%100 == 0)){
+        알맞게 수정
+
+3. YOLO Training image resizing 범위 수정
+
+  darknet/examples/detector.c
+     
+     1) void train_detector() 부분으로 가서
+     2) 
+        while(get_current_batch(net) < net->max_batches){
+        if(l.random && count++%10 == 0){
+            printf("Resizing\n");
+            int dim = (rand() % 10 + 10) * 32;
+            if (get_current_batch(net)+200 > net->max_batches) dim = 608;
+
+     3) 이 부분 알맞게 수정. 참고로 위는 320부터 608까지 resizing하며 학습하게 됨.
 
 
