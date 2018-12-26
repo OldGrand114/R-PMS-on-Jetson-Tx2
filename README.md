@@ -1,6 +1,9 @@
 # R-PMS-on-Jetson-Tx2
 Real-time Pedestrian Monitoring System on NVIDIA Jetson Tx2 using YOLOv3
 
+git clone
+
+
 # Intro...
 졸업 프로젝트(디자인 프로젝트) 결과 백업용.
 참고 하실 분은 참고하시되 한정된 주제에 대해 간략히 정리한 것이라 큰 도움은 안 됨.
