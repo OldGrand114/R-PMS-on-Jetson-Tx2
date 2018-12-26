@@ -1,4 +1,4 @@
-**3개 py파일중 실질적 역할을 하는건 evaluation.py 하나뿐**
+**3개 py파일중 실질적 역할을 하는건 evaluation.py 하나뿐**<
   gt,pred는 각각 truck의 groundtruth, prediction을 car로 바꾸는 파일일 뿐이다.
 
 
