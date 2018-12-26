@@ -68,8 +68,8 @@ annotation tool은 두개 써봤는데 링크는 아래에... 각 장단점이 �
 https://github.com/AlexeyAB/Yolo_mark
 
 https://github.com/Cartucho/OpenLabeling
-
-
+<br>
+<br>
 # 내맘대로 YOLO 만져보기 
 ## I. 학습 네트워크 설정 및 디렉토리 설정.
 
@@ -96,7 +96,7 @@ https://github.com/Cartucho/OpenLabeling
    **MyObj.names**
      
      1) Class 이름 적어 놓은 파일
-        
+<br><br>        
 ## II. YOLO Training weight 파일 생성 주기 변경(darknet make 다시해야함)
   
   darknet/examples/detector.c
@@ -106,7 +106,7 @@ https://github.com/Cartucho/OpenLabeling
      3) 바로 아랫 줄에 
         if(i%10000==0 || (i < 1000 && i%100 == 0)){
         알맞게 수정
-
+<br><br>
 ## III. YOLO Training image resizing 범위 수정(darknet make 다시해야함)
 
   darknet/examples/detector.c
@@ -120,7 +120,7 @@ https://github.com/Cartucho/OpenLabeling
             if (get_current_batch(net)+200 > net->max_batches) dim = 608;
 
      3) 이 부분 알맞게 수정. 참고로 위는 320부터 608까지 resizing하며 학습하게 됨.
-
+<br><br>
 # mAP 평가 코드 
 
 https://github.com/Cartucho/mAP
