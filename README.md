@@ -4,12 +4,13 @@ Real-time Pedestrian Monitoring System on NVIDIA Jetson Tx2 using YOLOv3
 ubuntu 터미널에 다음과 같이 치세요 : git clone https://github.com/OldGrand114/R-PMS-on-Jetson-Tx2.git
 
 
-# Intro...
+# Introduction
 졸업 프로젝트(디자인 프로젝트) 결과 백업용.
-참고 하실 분은 참고하시되 한정된 주제에 대해 간략히 정리한 것이라 큰 도움은 안 됨.
+모든 프로젝트 파일을 다 올리는 것이 아니라 사용법 위주로 정리함.
 
 디자인 프로젝트의 일환으로 Jetson Tx2 보드 상에서 YOLOv3을 이용한 Object Detection을 구현.
-YOLOv3와 YOLOv3-tiny 비교 결과 YOLOv3는 약 2fps, YOLOv3-tiny는 약 20 fps를 보였으며 YOLOv3-tiny를 수정하여 성능 개선을 꾀함.
+YOLOv3와 YOLOv3-tiny 비교 결과 YOLOv3는 약 2fps, YOLOv3-tiny는 약 20 fps를 보였으며 YOLOv3-tiny를 수정하여 성능 개선을 꾀함
+YOLOv3-tiny를 기반으로 9차례에 걸쳐 네트워크를 수정하였으며 수정한 결과는 load해서 보시면 알 수 있음.(Upsampling을 2배에서 4배로 수정하니 좋더라구요)
 
 약 6~7m 높이에 설치되는 가로등에 설치되는 CCTV 환경을 가정함.
 객체의 크기가 영상 내에서 매우 작게 나타난다는 특징이 있음.
@@ -79,7 +80,7 @@ YOLO는 C로 작성된 Darknet Framework로 구현되어 있으며 자세한 설
      
      1) Class 이름 적어 놓은 파일
         
-## II. YOLO Training weight 파일 생성 주기 변경
+## II. YOLO Training weight 파일 생성 주기 변경(darknet make 다시해야함)
   
   darknet/examples/detector.c
   
@@ -89,7 +90,7 @@ YOLO는 C로 작성된 Darknet Framework로 구현되어 있으며 자세한 설
         if(i%10000==0 || (i < 1000 && i%100 == 0)){
         알맞게 수정
 
-## III. YOLO Training image resizing 범위 수정
+## III. YOLO Training image resizing 범위 수정(darknet make 다시해야함)
 
   darknet/examples/detector.c
      
