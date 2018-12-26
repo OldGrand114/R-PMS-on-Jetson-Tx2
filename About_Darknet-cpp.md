@@ -2,10 +2,9 @@
   https://github.com/prabindh/darknet
 
 # 2. How to use commands of YOLOv3
-    1. train
+    1.train
     
       1) 처음부터
       2) backup file 부터
-      ./darknet detector train (.data파일 위치) (.cfg파일 위치) (.backup파일 위치)
-    
-      EX) ./darknet detector train mmi10/MyObj.data mmi10/yolov3-tiny-mmi10.cfg mmi10/backup4/yolov3-tiny-mmi10.backup
+          ./darknet detector train (.data파일 위치) (.cfg파일 위치) (.backup파일 위치)
+          ./darknet detector train mmi10/MyObj.data mmi10/yolov3-tiny-mmi10.cfg mmi10/backup4/yolov3-tiny-mmi10.backup
