@@ -46,8 +46,11 @@ yolov3에서는 코드 작성자가 본인이 image 저장용 structure를 만�
 
 * 정말 도움 많이 받았다. 굉장히 사용하기 간편하고, 디자인도 괜찮고, 기능도 많다.<br>
 * 이를 통해 gui를 구성했으며, original, icon, video select mode로 나뉜다.<br>
-* icon 모드의 경우, 아이콘으로 마우스 이동 시 해당 아이콘 기능을 설명.
+[![original mode](https://i.postimg.cc/XYvYPQhv/1.png)](https://i.postimg.cc/XYvYPQhv/1.png)<br>
+* icon 모드의 경우, 아이콘으로 마우스 이동 시 해당 아이콘 기능을 설명.<br>
+[![icon mode](https://i.postimg.cc/zGPGYTZF/2.png)](https://i.postimg.cc/zGPGYTZF/2.png)<br>
 * video select 모드의 경우, 코드로 설정한 디렉토리 내에 비디오를 저장 시 자동으로 목록 업데이트가 gui에서 이루어진다.<br>(cam도 지원)
+[![video select mode](https://i.postimg.cc/SK2NSjmF/3.png)](https://i.postimg.cc/SK2NSjmF/3.png)<br>
 <br> 
 <br>
 
