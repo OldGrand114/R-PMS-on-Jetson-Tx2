@@ -10,24 +10,20 @@
     ./darknet detector train (.data파일 위치) (.cfg파일 위치)
     ./darknet detector train mmi10/MyObj.data mmi10/yolov3-tiny-mmi10.cfg
 <br>
-<br>
 
 ####  2) 특정 weight 부터
     ./darknet detector train (.data파일 위치) (.cfg파일 위치) (.weights 위치)
     ./darknet detector train mmi10/MyObj.data mmi10/yolov3-tiny-mmi10.cfg mmi9/backup4/yolov3-tiny-mmi9_350000.weights
-<br>
 <br>
 
 ####  3) backup file 부터
     ./darknet detector train (.data파일 위치) (.cfg파일 위치) (.backup파일 위치)
     ./darknet detector train mmi10/MyObj.data mmi10/yolov3-tiny-mmi10.cfg mmi10/backup4/yolov3-tiny-mmi10.backup
 <br>
-<br>
 
 ## 2. Validation
     ./darknet detector valid (.data파일 위치) (.cfg파일 위치) (.weights 위치) -thresh 0.4(옵션. 안 써도 됨) 
     ./darknet detector valid mmi9/MyObj.data mmi9/yolov3-tiny-mmi9.cfg mmi9/backup66/yolov3-tiny-mmi9_940000.weights -thresh 0.4 
-<br>
 <br>
 
 ## 3. Demo
