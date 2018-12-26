@@ -6,7 +6,6 @@
 
    * ###  처음부터
       ./darknet detector train (.data파일 위치) (.cfg파일 위치)
-      
       ./darknet detector train mmi10/MyObj.data mmi10/yolov3-tiny-mmi10.cfg
 
    * ###  특정 weight 부터
