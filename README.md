@@ -55,7 +55,7 @@ YOLO는 C로 작성된 Darknet Framework로 구현되어 있으며 자세한 설
 # 내맘대로 YOLO 설명(일단은 돌려보기)
 0. YOLO 홈페이지에서 Darknet 설치 및 tutorial 해봤다는 가정하에 진행.
 1. mmi9 폴더를 darknet 하위로 이동
-1-1. yolov3-tiny-mmi9.cfg
+ 1-1. yolov3-tiny-mmi9.cfg
      1) cfg 파일에서 본인이 원하는 네트워크 구성 가능.
      2) class 개수를 C라고 할 때
         (1) [yolo] 에서 classes 를 C로 설정.
