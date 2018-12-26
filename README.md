@@ -53,7 +53,7 @@ YOLO는 C로 작성된 Darknet Framework로 구현되어 있으며 자세한 설
 천천히 따라 해보시는게 최소삽질로 최대이득을 볼 수 있습니다.
 
 # 내맘대로 YOLO 만져보기 
-1. 학습 네트워크 설정 및 디렉토리 설정.
+I. 학습 네트워크 설정 및 디렉토리 설정.
 
   yolov3-tiny-mmi9.cfg
 
@@ -79,7 +79,7 @@ YOLO는 C로 작성된 Darknet Framework로 구현되어 있으며 자세한 설
      
      1) Class 이름 적어 놓은 파일
         
-2. YOLO Training weight 파일 생성 주기 변경
+II. YOLO Training weight 파일 생성 주기 변경
   
   darknet/examples/detector.c
   
@@ -89,7 +89,7 @@ YOLO는 C로 작성된 Darknet Framework로 구현되어 있으며 자세한 설
         if(i%10000==0 || (i < 1000 && i%100 == 0)){
         알맞게 수정
 
-3. YOLO Training image resizing 범위 수정
+III. YOLO Training image resizing 범위 수정
 
   darknet/examples/detector.c
      
