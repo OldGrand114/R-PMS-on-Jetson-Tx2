@@ -1,4 +1,4 @@
-**우선 yolov3에서 validation을 거쳐 result에 valid한거 저장되있다 가정.
+**우선 yolov3에서 validation을 거쳐 result에 valid한거 저장되있다 가정.**
 
   1. git clone해서 일단 다운
   2. mAP 평가 폴더 들어가기
@@ -7,6 +7,6 @@
   5. evaluation.py 실행하면 끝.
 
 
-**즉, 설치가 끝나고, mAP 구하는 과정은 크게 정리하면
+**즉, 설치가 끝나고, mAP 구하는 과정은 크게 정리하면**
    1) yolov3 valid 실행.
    2) evaluation.py 실행.
