@@ -53,6 +53,11 @@ https://github.com/AlexeyAB/darknet
 YOLO는 C로 작성된 Darknet Framework로 구현되어 있으며 자세한 설명은 위의 홈페이지를 참고하시면 Tutorial은 끝.
 천천히 따라 해보시는게 최소삽질로 최대이득을 볼 수 있습니다.
 
+# Training dataset
+
+이것 저것 많이 가져다 씀.
+총 16
+
 # 내맘대로 YOLO 만져보기 
 ## I. 학습 네트워크 설정 및 디렉토리 설정.
 
