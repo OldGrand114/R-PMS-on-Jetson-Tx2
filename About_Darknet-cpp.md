@@ -40,7 +40,7 @@ yolov3에서는 코드 작성자가 본인이 image 저장용 structure를 만�
 <br> 
 
 ## 2. cvui 사용
-출처 : https://github.com/Dovyski/cvui
+출처 : https://github.com/Dovyski/cvui<br>
 사용법 : https://dovyski.github.io/cvui/<br><br><br>
 
 정말 도움 많이 받았다. 굉장히 사용하기 간편하고, 디자인도 괜찮고, 기능도 많다.<br>
