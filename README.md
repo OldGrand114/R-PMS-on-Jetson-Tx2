@@ -44,7 +44,9 @@ Joseph Redmon과 Ali Farhadi를 찬양하십시오. 갓갓
 YOLO 및 Darknet은 YOLO를 구글에서 검색하시고 홈페이지 들어가서 다운받으세요. 링크는 서비스
 
 https://pjreddie.com/darknet/yolo/
+
 https://github.com/pjreddie/darknet
+
 https://github.com/AlexeyAB/darknet
 
 YOLO는 C로 작성된 Darknet Framework로 구현되어 있으며 자세한 설명은 위의 홈페이지를 참고하시면 Tutorial은 끝.
