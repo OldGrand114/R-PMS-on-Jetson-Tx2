@@ -115,4 +115,14 @@ Dataset 만드신 분들 존경존경 충성충성.
 
      3) 이 부분 알맞게 수정. 참고로 위는 320부터 608까지 resizing하며 학습하게 됨.
 
+# 평가 코드 
 
+https://github.com/Cartucho/mAP
+
+감사합니다 Cartucho님.ㅎㅎ
+여기서 일단 git download하면 mAP라는 폴더 생성되고 extra 들어가서 Readme.md 정독ㄱㄱ
+
+mAP 평가하려고 prediction 변환이 필요해서 C로 mAP_prodeict 변환 코드 만들어 놨으며 이거 make 한번 해줘야함.
+Car class랑 Truck Class를 하나로 합쳐서 평가하기 위해 python파일 2개 만들어 놨고,
+코드 좀 편하게 돌리려고 python으로 command 모음 파일 하나 만들어 놨음.
+디렉토리는 다운로드 받은 컴 환경에 맞춰서 다시 설정해주셔야함.
