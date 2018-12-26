@@ -52,7 +52,7 @@ https://github.com/AlexeyAB/darknet
 YOLO는 C로 작성된 Darknet Framework로 구현되어 있으며 자세한 설명은 위의 홈페이지를 참고하시면 Tutorial은 끝.
 천천히 따라 해보시는게 최소삽질로 최대이득을 볼 수 있습니다.
 
-# YOLO 트레이닝 해보기
+# 내맘대로 YOLO 설명(일단은 돌려보기)
 0. YOLO 홈페이지에서 Darknet 설치 및 tutorial 해봤다는 가정하에 진행.
 1. mmi9 폴더를 darknet 하위로 이동
 1-1. yolov3-tiny-mmi9.cfg
