@@ -35,18 +35,32 @@
 <br>
 
 # 3. What I changed
-## 1. image -> structure
+## 1) image -> structure
 yolov3에서는 코드 작성자가 본인이 image 저장용 structure를 만들어서 사용. channel은 rgb이고 normalized되어 있어서, 이를 opencv에 쓸 Mat로 변환함.
 <br> 
 <br>
 
-## 2. cvui 사용
+## 2) cvui 사용
 출처 : https://github.com/Dovyski/cvui<br>
 사용법 : https://dovyski.github.io/cvui/<br><br><br>
 
-정말 도움 많이 받았다. 굉장히 사용하기 간편하고, 디자인도 괜찮고, 기능도 많다.<br>
-이를 통해 gui를 구성했으며, original, icon, video select mode로 나뉜다.
+* 정말 도움 많이 받았다. 굉장히 사용하기 간편하고, 디자인도 괜찮고, 기능도 많다.<br>
+* 이를 통해 gui를 구성했으며, original, icon, video select mode로 나뉜다.<br>
+* icon 모드의 경우, 아이콘으로 마우스 이동 시 해당 아이콘 기능을 설명.
+<br> 
+<br>
 
+## 3) Alarm 기능 설정
+* 화면에 ROI를 표시할 수 있게 하였다. 점 4개 찍어서 만들 수도 있고, 사각형을 그릴 수도 있다.<br>
+* 또한 ROI의 투명도도 조절 가능하며, 어떤 object를 알람 띄울 것인지도 선택 가능.<br>
+Alarm의 경우도 person/bicycle, car는 ROI와 겹칠 시 바닥에 각각 빨강, 파랑 alaram이 뜨며, 투명도 조절 가능
+<br> 
+<br>
+
+## 4) 그 외 기능
+* FPS 표시 가능.<br>
+* Threshold(정확히는 predicted probability) 표시 가능.<br>
+* object별 predicted probability 표시 가능.<br>
 
 
 
