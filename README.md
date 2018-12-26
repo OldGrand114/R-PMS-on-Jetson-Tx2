@@ -1,7 +1,7 @@
 # R-PMS-on-Jetson-Tx2
 Real-time Pedestrian Monitoring System on NVIDIA Jetson Tx2 using YOLOv3
 
-git clone
+git clone https://github.com/OldGrand114/R-PMS-on-Jetson-Tx2.git
 
 
 # Intro...
