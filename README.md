@@ -1,7 +1,7 @@
 # R-PMS-on-Jetson-Tx2
 Real-time Pedestrian Monitoring System on NVIDIA Jetson Tx2 using YOLOv3
 
-git clone https://github.com/OldGrand114/R-PMS-on-Jetson-Tx2.git
+ubuntu 터미널에 다음과 같이 치세요 : git clone https://github.com/OldGrand114/R-PMS-on-Jetson-Tx2.git
 
 
 # Intro...
