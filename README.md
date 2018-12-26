@@ -55,8 +55,14 @@ YOLO는 C로 작성된 Darknet Framework로 구현되어 있으며 자세한 설
 
 # Training dataset
 
-이것 저것 많이 가져다 씀.
-총 16
+이것 저것 많이 가져다 씀
+MIO-TCD-Localization, SPID, PETA, 116kBoxcars, DukeMTMC, MOT Challenge, VIRAT 등등
+Dataset 만드신 분들 존경존경 충성충성.
+검색하면 금방 나오니까 링크나 인용은 생략.
+이 외에 자체 제작한 set이 있으나 privacy 문제로 공유X. 발표 이후 삭제 함.
+
+총 157,756장 사용. 약 20000장 정도는 직접 annotation 함. ㅠㅠ
+
 
 # 내맘대로 YOLO 만져보기 
 ## I. 학습 네트워크 설정 및 디렉토리 설정.
