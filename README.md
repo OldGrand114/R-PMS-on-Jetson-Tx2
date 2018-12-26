@@ -115,7 +115,7 @@ Dataset 만드신 분들 존경존경 충성충성.
 
      3) 이 부분 알맞게 수정. 참고로 위는 320부터 608까지 resizing하며 학습하게 됨.
 
-# 평가 코드 
+# mAP 평가 코드 
 
 https://github.com/Cartucho/mAP
 
