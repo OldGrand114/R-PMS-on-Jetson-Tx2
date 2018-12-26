@@ -73,7 +73,7 @@ https://github.com/Cartucho/OpenLabeling
 # 내맘대로 YOLO 만져보기 
 ## I. 학습 네트워크 설정 및 디렉토리 설정.
 
-  **yolov3-tiny-mmi9.cfg **
+  **yolov3-tiny-mmi9.cfg**
 
      1) cfg 파일에서 본인이 원하는 네트워크 구성 가능.
      2) class 개수를 C라고 할 때
@@ -84,7 +84,7 @@ https://github.com/Cartucho/OpenLabeling
         (4) [upsample]에서 stride를 조절하여 upsampling 배수 조절 가능(클수록 작은 물체를 더 잘 검출하나 연산량 많이 요구)
         (5) [route]는 network load 하면서 입력 dimension 잘 보고 조절해야.......
   
-   **MyObj.data **
+   **MyObj.data**
     
      1) 학습 관련 directory 설정 파일
      2) classes 는 목표 class 개수로 알아서 설정.
@@ -93,7 +93,7 @@ https://github.com/Cartucho/OpenLabeling
      5) valid에는 Validation set directory 설정.
      6) backup에는 weight 파일 및 backup 파일 directory 설정.
   
-   **MyObj.names **
+   **MyObj.names**
      
      1) Class 이름 적어 놓은 파일
         
