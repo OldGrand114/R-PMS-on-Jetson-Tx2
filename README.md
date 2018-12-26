@@ -63,6 +63,12 @@ Dataset 만드신 분들 존경존경 충성충성.
 
 총 157,756장 사용. 약 20000장 정도는 직접 annotation 함. ㅠㅠ
 
+annotation tool은 두개 써봤는데 링크는 아래에... 각 장단점이 있긴한데 편한걸로 골라쓰시면 됨.
+
+https://github.com/AlexeyAB/Yolo_mark
+
+https://github.com/Cartucho/OpenLabeling
+
 
 # 내맘대로 YOLO 만져보기 
 ## I. 학습 네트워크 설정 및 디렉토리 설정.
