@@ -39,4 +39,38 @@ cf) 자전거 class를 제외하고 평가시 목표 달성. 포함 시 오검�
 3. 실험용 노트북 PC
  - NVIDIA Geforce GTX 1060
 
-# 
+# YOLOv3
+Joseph Redmon과 Ali Farhadi를 찬양하십시오. 갓갓
+YOLO 및 Darknet은 YOLO를 구글에서 검색하시고 홈페이지 들어가서 다운받으세요. 링크는 서비스
+
+https://pjreddie.com/darknet/yolo/
+https://github.com/pjreddie/darknet
+https://github.com/AlexeyAB/darknet
+
+YOLO는 C로 작성된 Darknet Framework로 구현되어 있으며 자세한 설명은 위의 홈페이지를 참고하시면 Tutorial은 끝.
+천천히 따라 해보시는게 최소삽질로 최대이득을 볼 수 있습니다.
+
+# YOLO 트레이닝 해보기
+0. YOLO 홈페이지에서 Darknet 설치 및 tutorial 해봤다는 가정하에 진행.
+1. mmi9 폴더를 darknet 하위로 이동
+1-1. yolov3-tiny-mmi9.cfg
+     1) cfg 파일에서 본인이 원하는 네트워크 구성 가능.
+     2) class 개수를 C라고 할 때
+        (1) [yolo] 에서 classes 를 C로 설정.
+        (2) [yolo] 바로 위 [convolutional]에서 filters를 (C+5)*3 으로 설정.
+        (3) [net]에서 입력 영상 resizing 크기는 width, height를 변경할 수 있음(32배수)
+        (4) [upsample]에서 stride를 조절하여 upsampling 배수 조절 가능(클수록 작은 물체를 더 잘 검출하나 연산량 많이 요구)
+        (5) [route]는 network load 하면서 입력 dimension 잘 보고 조절해야.......
+1-2. MyObj.data
+     1) 학습 관련 directory 설정 파일
+     2) classes 는 목표 class 개수로 알아서 설정.
+     3) train에는 training image data가 저장되어 있는 txt 파일 directory로 설정.
+     4) names에는 각 class의 이름이 적혀있는 파일의 directory로 설정.
+     5) valid에는 Validation set directory 설정.
+     6) backup에는 weight 파일 및 backup 파일 directory 설정.
+1-3. MyObj.names
+     1) Class 이름 적어 놓은 파일
+        
+        
+
+
