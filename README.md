@@ -2,6 +2,9 @@
 Real-time Pedestrian Monitoring System on NVIDIA Jetson Tx2 using YOLOv3
 
 # Intro...
+졸업 프로젝트(디자인 프로젝트) 결과 백업용.
+참고 하실 분은 참고하시되 한정된 주제에 대해 간략히 정리한 것이라 큰 도움은 안 됨.
+
 디자인 프로젝트의 일환으로 Jetson Tx2 보드 상에서 YOLOv3을 이용한 Object Detection을 구현.
 YOLOv3와 YOLOv3-tiny 비교 결과 YOLOv3는 약 2fps, YOLOv3-tiny는 약 20 fps를 보였으며 YOLOv3-tiny를 수정하여 성능 개선을 꾀함.
 
@@ -17,4 +20,15 @@ YOLOv3와 YOLOv3-tiny 비교 결과 YOLOv3는 약 2fps, YOLOv3-tiny는 약 20 fp
 3. mAP 90% 이상
 4. Person missing rate 5% 이하
 
-cf) 자전거 class를 제외하고 평가시 목표 달성. 포함 시 오검출 현상으로 정성적 평가는 매우 떨어짐.
+cf) 자전거 class를 제외하고 평가시 목표 달성. 포함 시 오검출 현상으로 정성적 평가는 매우 떨어짐.ㅠㅠ
+
+# 개발 환경
+0. Jetson Tx2 보드 1대, 학습용 PC 1대, 노트북 1대
+1. 공통
+ - Ubuntu 16.04
+ - CUDA 9.0
+ - CUDNN 7.1.4
+ - OpenCV 3.3.1
+ 
+ 2. 
+
