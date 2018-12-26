@@ -2,6 +2,7 @@ import os
 import shutil
 
 os.chdir('/home/tkol/mAP/ground-truth')
+# 이 디렉토리는 본인에게 맞는 디렉토리로 바꿔야 한다.
 
 if not os.path.exists('/home/tkol/mAP/ground-truth/backup2'): # if it doesn't exist already
   os.makedirs('/home/tkol/mAP/ground-truth/backup2')
