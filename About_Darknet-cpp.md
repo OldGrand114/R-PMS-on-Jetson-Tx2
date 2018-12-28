@@ -25,8 +25,10 @@
 <br>
 
 원래는 명령어를 돌리면 "result"라는 폴더에 "comp4_det_test_(레이블명)"으로 저장만 된다. (YOLOv3 코드가 그렇게 설정)<br>
-[![detector.c 참조](https://i.postimg.cc/NjbcsKGd/validation-code.png)](https://postimg.cc/TKySQYDb)<br>
+지금도 저장은 일단 저기에 된다. valid 명령어 치고 나면 한번 파일 확인해 보자.<br><br>
+[![detector.c 참조](https://i.postimg.cc/NjbcsKGd/validation-code.png)](https://postimg.cc/TKySQYDb)<br><br>
 그러나 mAP를 구하기 위해 mAP 구하는 평가 코드에 YOLOv3 valid 명령과 연동시켜 동시에 돌아가게 하였음.<br>
+
 
 
 ## 3) Demo
